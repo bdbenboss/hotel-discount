@@ -45,6 +45,10 @@ class HotelsController < ApplicationController
     redirect_to hotels_url, notice: "Hotel was successfully destroyed."
   end
 
+  # def destroy_all
+  #   @hotel.all.destroy
+  # end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_hotel

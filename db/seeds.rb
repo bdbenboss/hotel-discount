@@ -7,10 +7,12 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # puts 'Destroying all hotels and rooms'
-# Hotel.destroy_all
+Hotel.destroy_all
 # Room.destroy_all
 # puts 'Creating Hotel and Room'
-# Hotel.create!(name: 'Lesperance', address: '13 rue de la paix, 74000 ANNECY')
+hotel = Hotel.new(name: 'Lesperance', address: '13 rue de la paix, 74000 ANNECY')
+hotel.save
 # puts Hotel.name
 # puts Hotel.address
-# Room.create!(price_per_night: 80, capacity: 4)
+room = Room.new(price_per_night: 80, capacity: 4)
+room.save
