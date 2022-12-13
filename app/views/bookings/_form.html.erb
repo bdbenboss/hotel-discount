@@ -1,5 +1,6 @@
 
-<%= simple_form_for(@booking) do |f| %>
+<%= simple_form_for(@booking), local: true, html: {data: {turbo: false}} do |f| %>
+<%# form_with model: @booking, local: true, data: { turbo:false } do |form| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
